@@ -18,7 +18,7 @@
 		<a-scene>
 
 		<a-assets>
-			<img id="bg1" src="img/bg.jpg">
+			<img id="bg1" src="img/room-dk.jpg">
 			<img id="back" src="img/back.png">
 			<a-asset-item id="chair-obj" src="obj/chair.obj"></a-asset-item>
 			<a-asset-item id="table-obj" src="obj/coffee_table.obj"></a-asset-item>
@@ -32,7 +32,7 @@
 			<a-event name="mouseleave" material.opacity="0.6"></a-event>
 		</a-circle>
 
-		<a-obj-model src="#table-obj" mtl="#chair-mtl" position="-1 1.25 -2" scale="0.001 0.001 0.001">
+		<a-obj-model src="#otto-obj" mtl="#chair-mtl" position="-1 0.25 -2" scale="0.001 0.001 0.001">
 			<a-animation attribute="rotation" repeat="indefinite" easing="linear" to="0 360 0" dur="10000"></a-animation>
 		</a-obj-model>
 
@@ -40,7 +40,7 @@
 			<a-animation attribute="rotation" repeat="indefinite" easing="linear" to="0 360 0" dur="10000"></a-animation>
 		</a-obj-model>
 
-		<a-obj-model src="#otto-obj" mtl="#chair-mtl" position="1 1.25 -2" scale="0.001 0.001 0.001">
+		<a-obj-model src="#otto-obj" mtl="#chair-mtl" position="1 0.25 -2" scale="0.001 0.001 0.001">
 			<a-animation attribute="rotation" repeat="indefinite" easing="linear" to="0 360 0" dur="10000"></a-animation>
 		</a-obj-model>
 
