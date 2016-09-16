@@ -1,1 +1,49 @@
-<p>hello</p>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Shopping Cart Demo</title>
+		<meta name="description" content="Visa Innovation Lab Demo">
+		<script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+		<script src="https://omc1.github.io/aframe-href-component.min.js"></script>
+<!-- 
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+			integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+			crossorigin="anonymous">
+		</script>
+ -->
+	</head>
+
+	<body>
+		<a-scene>
+
+		<a-assets>
+			<img id="bg1" src="img/checkerboard.jpg">
+			<img id="comp1" src="img/comp1.jpg">
+			<img id="comp2" src="img/comp2.jpg">
+			<img id="comp3" src="img/comp3.jpg">
+			<img id="comp4" src="img/comp4.jpg">
+			<a-asset-item id="chair1-obj" src="img/chair1.obj"></a-asset-item>
+			<a-asset-item id="chair1-mtl" src="img/chair1.mtl"></a-asset-item>
+			<!-- <video id="video" src="video.mp4"></video> -->
+		</a-assets>
+
+		<a-plane color="#FFF" height="1" width="1" src="#comp1" position="-1.875 1.5 -1.5" rotation="0 30 0" material="side: double" href="page1.html"></a-plane>
+		<a-plane color="#FFF" height="1" width="1" src="#comp2" position="-0.625 1.5 -2" material="side: double" href="page2.html"></a-plane>
+		<a-plane color="#FFF" height="1" width="1" src="#comp3" position="0.625 1.5 -2" material="side: double" href="page3.html"></a-plane>
+		<a-plane color="#FFF" height="1" width="1" src="#comp4" position="1.875 1.5 -1.5" rotation="0 -30 0" material="side: double" href="page4.html"></a-plane>
+
+		<a-obj-model  scale="0.00001 0.00001 0.00001" src="#chair1-obj" mtl="#chair1-mtl"></a-obj-model>
+
+		<a-sky src="#bg1" rotation="0 -45 0"></a-sky>
+
+		<a-camera position="0 0 0">
+			<a-cursor fuse="true" position="0 0 -0.5" scale="1 1 1" geometry="primitive: ring" material="color: #9999cc; shader: flat">
+				<a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="1 1 1" to="1.5 1.5 1.5" dur="2000"></a-animation>
+				<a-animation begin="fusing" easing="ease-in" attribute="material.opacity" fill="none" from="1 1 1" to="0 0 0" dur="2000"></a-animation>
+			</a-cursor>
+		</a-camera>
+
+		</a-scene>
+	</body>
+</html>

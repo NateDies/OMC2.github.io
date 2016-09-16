@@ -1,2 +1,2 @@
-# OMC2.github.io
-Visa innovation centre demo site
+# OMC1.github.io
+Visa Innovation Center Demo Site
